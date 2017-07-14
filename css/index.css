@@ -24,33 +24,40 @@ header {
 	background-color: yellow;
 	padding: 0.1rem 0;
 }
+header #QR-ico {
+	display: inline-block;
+	font-size: 0.2rem;
+	margin-right: 0.05rem; 
+	margin-left: 0.05rem;
+}
 header #search {
 	background-color: white;
-	min-width: 95%;
-/* 	height: 50%; */
+	min-width: 90%;
 	display: inline-block;
 	padding: 0;
+	border-radius: 0.05rem;
 }
 header #search-ico {
 	display: inline-block;
 	background-color: white;
 	padding: 0.09rem 0;
+	padding-bottom: 0.045rem;
 	margin-right: 0;
+	border-radius: 0.05rem;
 }
 header input {
 	border: none;
-	/* display: inline-block; */
 	height: 100%;
-	width: 95%;
+	width: 90%;
 	outline: none;
-	/* padding-left: 0;
-	margin-left: 0; */
 }
 header #menu-ico {
 	display: inline-block;
-	/* margin-left:0px;
-	margin-right: 0px; */
 	font-size: 0.2rem;
-/* 	margin-top: 0.1rem;
- */
+}
+#myCarousel {
+	max-width: 640px;
+	margin: 0 auto;
+	max-height: 300px;
+	overflow: hidden;
 }
