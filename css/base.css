@@ -1,0 +1,214 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+html{font-size: 625%;}
+img{display:block;max-width:100%;}
+ul li{list-style:none;}
+body{font-size:.16rem;}
+#header{
+    width:100%;
+    max-width:6.4rem;
+    margin:0 auto;
+}
+#header h1{
+    display:none;
+}
+#header .nav{
+    width:100%;
+    height:.38rem;
+    border:1px solid #EBF6E5;
+    box-sizing:border-box;
+}
+#header .nav h2{
+    display:none;
+}
+#header .nav li{
+    float:left;
+    border-right:.01rem solid #EBF6E5;
+    color:#839271;
+    box-sizing:border-box;
+    text-align:center;
+    height:.38rem;
+    line-height:.38rem;
+}
+#header .nav .n1{
+    width:18%;
+}
+#header .nav .n2{
+    width:20%;
+}
+#header .nav .n3{
+    width:20%;
+}
+#header .nav .n4{
+    width:20%;
+}
+#header .nav .n5{
+    width:22%;
+}
+#header .nav a{
+    width:100%;
+    height:38px;
+    line-height:38px;
+    display:block;
+}
+#header .nav .active:hover {
+    font-weight: bold;
+    color: #f60;
+    background: #F1FAEA;
+}
+
+#myCarousel,#section{
+    max-width: 640px;
+    margin:0 auto;
+}
+#section .icon{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#section .icon li
+{
+    float: left;
+    width: 24%;
+    font-size: 14px;
+    text-align: center;
+
+}
+#section .icon li img{
+    width:50%;
+    margin: 5px auto;
+}
+#section .search input{
+    width: 70%;
+    height: 30px;
+    border:none;
+}
+#section .search{
+
+    clear: both;
+    font-size: 14px;
+    margin-top: 20px;
+}
+#section .search button{
+    width: 30%;
+    height: 30px;
+    border: 1px solid deeppink;
+    background: #FFFFFF;
+
+}
+#section h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align:center;
+    font-weight: bold;
+    color: #261a3b;
+    background: #F1FAEA;
+}
+#section  h4{
+    width:100%;
+    background-color:#E7F4DD;
+    color:#275900;
+    padding:.05rem 0;
+    font-size:.16rem;
+    margin:.02rem 0;
+}#section .bd .infoList{
+    padding: 0 10px;
+    font-size: 14px;
+ }
+#section .bd .date {
+    float: right;
+}
+
+#section .title .txtMarquee-top .hd{
+    margin-top: 40px;
+}
+
+
+#footer{
+    clear:both;
+    max-width:6.4rem;
+    margin:0 auto;
+}
+#footer h4{
+    width:100%;
+    background-color:#E7F4DD;
+    color:#275900;
+    padding:.05rem 0;
+    font-size:.16rem;
+    margin:.02rem 0;
+}
+#footer .top{
+    width:100%;
+    background-color:#fff;
+    max-width:6.4rem;
+}
+#footer .top .map{
+    width:25%;
+    float:left;
+}
+#footer .top .map img{
+    padding-top:8%;
+}
+#footer .top .information{
+    width:75%;
+    float:left;
+    background-color:#fff;
+}
+#footer .top .information span{
+    float:left;
+    width:30%;
+    font-size:14px;
+}
+#footer .top .information p{
+    float:left;
+    width:70%;
+    font-size:.12rem;
+    color:#275900;
+    white-space:nowrap;
+    text-overflow:clip;
+    overflow:hidden;
+}
+#footer .top .information1{
+    margin:.1rem 0;
+}
+#footer .kong{clear:both;height:.2rem;width:100%;background-color:#fff;}
+#footer .center{
+    clear:both;
+    width:100%;
+    height:.2rem;
+    background-color:#E7F4DD;
+    text-align:center;
+    color:#275900;
+    font-weight:bold;
+}
+#footer .dian{
+    height:.9rem;
+}
+.bottom{
+    height:.65rem;
+    width:100%;
+    min-width:3.2rem;
+    margin:0 auto;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:#84C756;
+}
+.bottom li{
+    width:20%;
+    float:left;
+    text-align:center;
+    margin:0.1rem 0 0 0;
+}
+.bottom li img{
+    margin:0 auto;
+    position:relative;
+    top:-0.3rem;
+}
+.bottom li a{
+    color:#fff;
+    font-size:.12rem;
+}
+
+
+
