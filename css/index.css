@@ -28,15 +28,19 @@ header {
 header #QR-ico {
 	display: inline-block;
 	font-size: 0.2rem;
-	margin-right: 0.05rem; 
-	margin-left: 0.05rem;
+/* 	margin-right: 0.05rem; 
+	margin-left: 0.05rem; */
+	margin-right: 1.5%; 
+	margin-left: 1.5%; 
+	max-width: 5%;
 }
 header #search {
 	background-color: white;
-	width: 80%;
+	width: 82%;
 	display: inline-block;
 	padding: 0;
 	border-radius: 0.05rem;
+
 }
 header #search-ico {
 	display: inline-block;
@@ -55,6 +59,9 @@ header input {
 header #menu-ico {
 	display: inline-block;
 	font-size: 0.2rem;
+	margin-right: 1%; 
+	margin-left: 1%;
+	max-width: 5%
 }
 #myCarousel, #main {
 	max-width: 640px;
