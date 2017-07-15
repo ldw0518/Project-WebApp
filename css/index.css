@@ -17,6 +17,7 @@ body {
 	font-size: .16rem;
 }
 header {
+	clear: both;
 	width: 100%;
 	max-width: 6.4rem;
 	margin: 0 auto;
@@ -32,7 +33,7 @@ header #QR-ico {
 }
 header #search {
 	background-color: white;
-	min-width: 90%;
+	width: 80%;
 	display: inline-block;
 	padding: 0;
 	border-radius: 0.05rem;
@@ -55,9 +56,16 @@ header #menu-ico {
 	display: inline-block;
 	font-size: 0.2rem;
 }
-#myCarousel {
+#myCarousel, #main {
 	max-width: 640px;
 	margin: 0 auto;
 	max-height: 300px;
 	overflow: hidden;
 }
+#main ul li {
+	list-style: none;
+	float: left;
+	max-height: 300px;
+	max-width: 25%;
+}
+
