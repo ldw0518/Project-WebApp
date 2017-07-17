@@ -15,7 +15,7 @@
 			<input type="text" placeholder="请输入商品名称或商品ID"></div>
 			<span id="menu-ico" class="	glyphicon glyphicon-th-list"></span>
 		</header>
-		<div>
+		<div id="part">
 			<div id="myCarousel" class="carousel slide">
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -54,16 +54,14 @@
 				</ul>
 			</div>
 		</div>
-		<footer id="footer">
-			
-		</footer>
-		<div class="bottom">
+
+		<div class="bottom" id="bottom">
 			<ul>
-				<li><a href="index.html"><span class="glyphicon glyphicon-home ico"></span><br>主页</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-heart-empty ico"></span><br>收藏</a></li>
+				<li><a href="" id="home"><span id="home-ico" class="glyphicon glyphicon-home ico selected"></span><br>主页</a></li>
+				<li><a href="" id="favourite"><span id="favourite-ico" class="glyphicon glyphicon-heart-empty ico"></span><br>收藏</a></li>
 				<li><a href="#"><img src="images/bottom.png" alt="发布"></a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-comment ico"></span><br>消息</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-user ico"></span><br>我的</a></li>
+				<li><a href="#" id="message"><span id="message-ico" class="glyphicon glyphicon-comment ico"></span><br>消息</a></li>
+				<li><a href="#" id="mine"><span id="mine-ico" class="glyphicon glyphicon-user ico"></span><br>我的</a></li>
 			</ul>
 		</div>
 
@@ -74,7 +72,39 @@
 				$('#myCarousel').carousel({
 					interval: 5000
 				})
-			})
+			});
+			$(function() {
+				$("#favourite").click(function() {
+					$("#favourite-ico").addClass('selected');
+					$("#home-ico, #message-ico, #mine-ico").removeClass('selected');
+					$("#part").load("app_1.html");
+					return false;
+				});
+			});
+			$(function() {
+				$("#home").click(function() {
+					$("#home").addClass('selected');
+					$("#favourite-ico, #message-ico, #mine-ico").removeClass('selected');
+					$("#part").load("app.html #part");
+					return false;
+				});
+			});
+			$(function() {
+				$("#message").click(function() {
+					$("#message-ico").addClass('selected');
+					$("#favourite-ico, #mine-ico, #home-ico").removeClass('selected');
+					$("#part").load("app_1.html");
+					return false;
+				});
+			});
+			$(function() {
+				$("#mine").click(function() {
+					$("#mine-ico").addClass('selected');
+					$("#favourite-ico, #message-ico, #home-ico").removeClass('selected');
+					$("#part").load("app_1.html");
+					return false;
+				});
+			});
 		</script>
 	</body>
 </html>

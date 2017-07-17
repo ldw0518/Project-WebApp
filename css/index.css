@@ -128,11 +128,19 @@ header #menu-ico {
 .bottom li img {
 	margin: 0 auto;
 	position: relative;
-	top: -0.3rem;
-	min-height: 0.8rem;
-	border: 2px solid;
+	top: -0.2rem;
+	height: 0.6rem;
+	width: 0.6rem;
+	border: 2px solid #02FAB6;
+	border-radius: 0.5rem;
 }
 .bottom .ico {
-	color: #02FAB6;
+	color: white;
 	font-size: 0.2rem;
+}
+.bottom ul li a:link, ul li a:visited {
+	border-bottom : none;
+}
+.bottom .selected {
+	color: #02FAB6;
 }
