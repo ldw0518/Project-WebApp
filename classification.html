@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Classification</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="css/classification.css">
+	</head>
+	<body>
+		<header>
+			<p id="header">分类</p>
+		</header>
+		<nav>
+			<ul id="nav">
+				<li><span></span><a href="">热门推荐</a></li>
+				<li><span></span><a href="">手机数码</a></li>
+				<li><span></span><a href="">女装</a></li>
+				<li><span></span><a href="">男装</a></li>
+				<li><span></span><a href="">家用电器</a></li>
+				<li><span></span><a href="">运动户外</a></li>
+				<li><span></span><a href="">美妆</a></li>
+				<li><span></span><a href="">房屋租赁</a></li>
+				<li><span></span><a href="">生活百货</a></li>
+			</ul>
+		</nav>
+
+
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$("#nav li:eq(0)").children("span").addClass("selected");
+				$("#nav li:eq(0)").children("a").addClass("active");
+			})
+			$("#nav li").click(function() {
+				$(this).children("span").addClass("selected");
+				$(this).children("a").addClass("active");
+				$(this).siblings("li").children("span").removeClass("selected");
+				$(this).siblings("li").children("a").removeClass("active");
+
+				return false;
+			})
+		</script>
+	</body>
+</html>

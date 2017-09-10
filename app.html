@@ -13,7 +13,7 @@
 			<span class="glyphicon glyphicon-qrcode" id="QR-ico"></span><div class="search" id="search"></span><span id="search-ico" class="glyphicon glyphicon-search">
 			</span>
 			<input type="text" placeholder="请输入商品名称或商品ID"></div>
-			<span id="menu-ico" class="	glyphicon glyphicon-th-list"></span>
+			<a href="classification.html"><span id="menu-ico" class="	glyphicon glyphicon-th-list"></span></a>
 		</header>
 		<div id="part">
 			<div id="myCarousel" class="carousel slide">
@@ -77,7 +77,7 @@
 				$("#favourite").click(function() {
 					$("#favourite-ico").addClass('selected');
 					$("#home-ico, #message-ico, #mine-ico").removeClass('selected');
-					$("#part").load("app_1.html");
+					// $("#part").load("app_1.html");
 					return false;
 				});
 			});
@@ -93,7 +93,7 @@
 				$("#message").click(function() {
 					$("#message-ico").addClass('selected');
 					$("#favourite-ico, #mine-ico, #home-ico").removeClass('selected');
-					$("#part").load("app_1.html");
+					// $("#part").load("app_1.html");
 					return false;
 				});
 			});
@@ -101,7 +101,7 @@
 				$("#mine").click(function() {
 					$("#mine-ico").addClass('selected');
 					$("#favourite-ico, #message-ico, #home-ico").removeClass('selected');
-					$("#part").load("app_1.html");
+					// $("#part").load("app_1.html");
 					return false;
 				});
 			});
